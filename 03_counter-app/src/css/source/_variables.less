@@ -1,0 +1,25 @@
+//out: false, main: "../custom.less", map: true
+
+.family-primary(@peso: 500){
+    font-family: 'Roboto', sans-serif;
+    font-weight: @peso;
+}
+
+.mt-5{
+    margin-top: 2rem!important;
+}
+
+@color-primario: #019df4;
+@complementary-primary: darken(@color-primario, 30%);
+@action: rgb(0, 161, 0);
+@blanco: #fff;
+@negro: #000;
+
+.shadow(@color: #00000033, @x: 0, @y: 5px, @desenfocado: 10px, @reventado: 0px){
+    box-shadow: @color @x @y @desenfocado @reventado ;
+}
+
+.bg-primary{
+    background: @color-primario;
+    color: @blanco;
+}

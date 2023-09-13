@@ -1,0 +1,49 @@
+//out: false, main: "../custom.less"
+
+.buttons{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.btn{
+    background: darken(@color-primario, 10%);
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 33.333rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: .7rem;
+    transition: .3s ease all;
+    flex: 1 1 100px;
+    &:hover{
+        background: @blanco;
+        color: darken(@color-primario, 30%);
+        .shadow(@color: @complementary-primary);
+    }
+    &:active,
+    &:target{
+        background: lighten(@color-primario, 40%);
+        box-shadow: none;
+    }
+    &-action{
+        background: @action;
+        flex: inherit;
+        width: fit-content;
+        font-weight: 600;
+    }
+}
+
+input{
+    padding: 10px 15px;
+    box-sizing: border-box;
+    &:active,
+    &:focus{
+        outline: none;
+        .shadow();
+        border: none;
+    }
+}

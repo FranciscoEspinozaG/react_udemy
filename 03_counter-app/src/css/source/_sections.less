@@ -1,0 +1,28 @@
+//out: false, main: "../custom.less"
+
+body{
+    .family-primary();
+}
+
+.contador{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    .shadow();
+    .datos{
+        width: 100%;
+        text-align: center;
+        h1{
+            text-transform: uppercase;
+            margin: 0;
+            .family-primary(900);
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
